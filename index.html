@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Management</title>
+    <!-- Embedded CSS -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Container */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: #f4f4f4;
+            text-decoration: underline;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .section p {
+            margin-bottom: 10px;
+        }
+
+        .section form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section form input,
+        .section form button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .section form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .section form button:hover {
+            background-color: #555;
+        }
+
+        .product-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-list li {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Supermarket Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#manage-products">Manage Products</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="container">
+                <h2>Welcome to Our Supermarket Management System</h2>
+                <p>Efficiently manage your supermarket inventory, orders, and more.</p>
+                <p>Navigate to the Manage Products section to add or view products.</p>
+            </div>
+        </section>
+
+        <!-- Manage Products Section -->
+        <section id="manage-products" class="section">
+            <div class="container">
+                <h2>Manage Products</h2>
+                <form>
+                    <input type="text" placeholder="Product Name" required>
+                    <input type="number" placeholder="Price" required>
+                    <input type="number" placeholder="Quantity" required>
+                    <button type="submit">Add Product</button>
+                </form>
+                <h3>Product List</h3>
+                <ul class="product-list">
+                    <!-- Example products -->
+                    <li>Apple - $1.00 (Qty: 50)</li>
+                    <li>Bread - $2.50 (Qty: 30)</li>
+                    <!-- More products will be dynamically added here -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need support, please contact us:</p>
+                <ul>
+                    <li>Email: support@supermarket.com</li>
+                    <li>Phone: +123 456 7890</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Supermarket Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
